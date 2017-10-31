@@ -35,8 +35,7 @@ and open the template in the editor.</p>
         </div>
         <div>
             <p>
-                <?=mt($arr_obj1);?>
-            </p>
+                <?=sh($arr_obj2);?>
         </div>
         
     </body>
