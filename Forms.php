@@ -4,7 +4,6 @@ require_once 'function_str.php';
 
 <html>
     <head>       
-        
     </head>
     <main>
         <body>
