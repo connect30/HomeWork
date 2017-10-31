@@ -33,10 +33,6 @@ and open the template in the editor.</p>
                                 <?= Arr();?>
             </p>
         </div>
-        <div>
-            <p>
-                <?=sh($arr_obj2);?>
-        </div>
-        
+       
     </body>
 </html>
