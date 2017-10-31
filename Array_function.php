@@ -23,3 +23,9 @@ if (!$res) {
 } else {
     echo 'Сумма элементов массива равна …' . $res;
 }
+
+
+function mt($arr_obj2) {
+    $n = mt_rand(0, count($arr_obj2) - 1);
+    return $arr_obj2[$n];
+}

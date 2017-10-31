@@ -6,6 +6,7 @@ and open the template in the editor.
 -->
      <?php
      require_once 'function.php';
+     require_once 'Array_function.php';
    define('FONT', '22px');
    const COLOR = 'RED';
         ?>
@@ -30,6 +31,11 @@ and open the template in the editor.</p>
             <p id="p2">
                                
                                 <?= Arr();?>
+            </p>
+        </div>
+        <div>
+            <p>
+                <?=mt($arr_obj1);?>
             </p>
         </div>
         
