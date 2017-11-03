@@ -37,11 +37,18 @@ function Delete_DIR() {
     $dir_name = scandir($dd);
     $dir_arr = [];
         foreach ($dir_name as $dir_value) {
-          if (is_dir($dir_value) && ($dir_value!='.')&& ($dir_value!='..')&&($dir_value!='.git')&&($dir_value!='nbproject'))
-              if (rmdir ($dir_value)) echo 'DIR deleted';;
-                 
-        
-}
+        if (is_dir($dir_value) && $dir_value !='.' && $dir_value !='..' && $dir_value !='.git' && $dir_value != 'nbproject')
+            //&&($dir_value!='.git') && ($dir_value!='nbproject'));
+         $dir_arr[] = $dir_value;
+        }
+      
+     foreach ($dir_arr as $value_file) {
+         if (file_exists('')) continue;
+            $f = $dd.'/'.$value_file;
+           echo '<br>'.$f;
+           if (is_dir($f)) Delete_DIR ($f);                            
+        }
+
 }
 
 ///Create_Dir(10);            
