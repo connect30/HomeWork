@@ -43,7 +43,7 @@ function res() {
     <p><input type="submit" value="Отправить"></p>
 </form>
 <p>
-    <?php if (!empty($_POST['submit'])) res();?>
+    <?php echo res();?>
 </p>
 
 

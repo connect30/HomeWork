@@ -22,7 +22,7 @@
         </div>
         <div>
             <p>
-                <?=$result;?>;
+                <?=$result;?>
             </p>
         </div>
     </body>
