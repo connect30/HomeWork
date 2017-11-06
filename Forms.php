@@ -1,6 +1,7 @@
 <?php
 //require_once 'function_str.php';
 require_once 'function_ini.php';
+require_once 'function_exec.php';
 
 ?>
 
@@ -28,6 +29,12 @@ require_once 'function_ini.php';
                 <p>
                     Лидер британского рок-коллектива The Rolling Stones Мик Джаггер закрутил роман с 22-летней кинопродюсером Нур Альфаллой, передает The Sun со ссылкой на собственный источник.    
                 </p>
+            </div>
+            <div>
+                <form action="function_exec.php" method="post">
+                    <input type="text" name="ext1" />
+                    <input type="submit" name="submit"/>
+                </form>
             </div>
         </body>
     </main>
