@@ -1,4 +1,5 @@
 <?php
+
 $reg = '#^\w...c$#i';
 $str = '57abc';
  //echo preg_match($reg, $str, $m);
