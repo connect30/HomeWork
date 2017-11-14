@@ -16,6 +16,13 @@ class Point {
         
     }
     
+    public function __get($n) {
+        return 'Класс Point работает только в двумерном пространстве';
+    }
+    public function __toString() {
+        return 'Точка с координатами ('.$this->x.','.$this->y.')';
+        
+    }
     public function getX() {
         return $this->x;      
     }
@@ -65,9 +72,16 @@ class Point1 extends Point{
 //echo $point->setX(2).'<br />';
 //echo $point->setY(20).'<br />';
 
-$point = new Point(1,10);
-$point1 = new Point(2,30);
-$point2 = new Point(3,50);
-echo Point::getCounter();
+//$point = new Point(1, 10);
+//$point1 = new Point(2, 30);
+//$point2 = new Point(3, 50);
+//echo Point::getCounter();
 //echo $point->getID1();
-        
+//$point = new Point(1, 15);
+//echo $point . '</br>';
+//$point = new Point(2, 53);
+//echo $point . '</br>';
+//$point = new Point(3, 54);
+//echo $point . '</br>';
+$point = new Point(3, 54);
+echo $point->z;
