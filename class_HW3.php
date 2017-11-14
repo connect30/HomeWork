@@ -1,16 +1,18 @@
 <?php
 
 
-class class_Point {
+class Point {
     public $x;
     public $y;
+    private static $counter = 0;
     protected $id = 0;
     public function __construct($x, $y) {
         $this->x = $x;
         $this->y = $y;
         for ($i = 0; $i < 100; $i++) {
-        $this->id = uniqid($i);    
+        $this->id = uniqid($i);        
         }
+        self::$counter++;
         
     }
     
@@ -24,11 +26,16 @@ class class_Point {
         return $this->x = $x;      
     }
     public function setY($y) {
-        return $this->y = $y;      
-    }
+        return $this->y = $y;     
+    }    
+    public static function getCounter() {
+        return self::$counter;
+}
+      
+    
 }
 
-class Point1 extends class_Point{
+class Point1 extends Point{
         public function getID() {
         return $this->id;        
     }
@@ -58,6 +65,9 @@ class Point1 extends class_Point{
 //echo $point->setX(2).'<br />';
 //echo $point->setY(20).'<br />';
 
-$point = new Point1(1,10);
-echo $point->getID1();
+$point = new Point(1,10);
+$point1 = new Point(2,30);
+$point2 = new Point(3,50);
+echo Point::getCounter();
+//echo $point->getID1();
         
