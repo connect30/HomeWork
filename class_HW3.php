@@ -21,8 +21,15 @@ class Point {
     }
     public function __toString() {
         return 'Точка с координатами ('.$this->x.','.$this->y.')';
-        
+    }    
+    public function __set ($n, $value){
+         $this->n =$value;
+         //return 
+         //echo 'Класс Point работает только в двумерном пространстве';
     }
+    //public function __clone() {
+     //   $this->x=10;
+    //}
     public function getX() {
         return $this->x;      
     }
@@ -35,6 +42,9 @@ class Point {
     public function setY($y) {
         return $this->y = $y;     
     }    
+    public function __call($metod,$arg) {
+        return 'Error call metod'.$metod;
+    }
     public static function getCounter() {
         return self::$counter;
 }
@@ -84,4 +94,8 @@ class Point1 extends Point{
 //$point = new Point(3, 54);
 //echo $point . '</br>';
 $point = new Point(3, 54);
-echo $point->z;
+echo $point->setZ();
+
+//$r = clone $point;
+//echo $r->x=53;
+
