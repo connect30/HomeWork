@@ -1,7 +1,6 @@
 <?php
 
-
-class Point {
+class Point1 {
     public $x;
     public $y;
     private static $counter = 0;
@@ -51,51 +50,4 @@ class Point {
       
     
 }
-
-class Point11 extends Point{
-        public function getID() {
-        return $this->id;        
-    }
-    public function getID1() {
-        $i = 15;
-        $res;
-        while ($i<20) { 
-            $res1 = mt_rand(0, 10);
-            $res = $this->id = uniqid($res1);        
-        $i++;            
-        } return $res;
-    }
-}
-//$point = new class_Point();
-//$point->x = 5;
-//$point->y = 3;
-//echo $point->x.'<br />'; 
-//echo $point->y.'<br />'; 
-
-//$point = new class_Point(1,10);
-//echo $point->x.'<br />'; 
-//echo $point->y.'<br />'; 
-//echo '<hr>';
-//echo $point->getX().'<br />';
-//echo $point->getY().'<br />';
-//echo '<hr>';
-//echo $point->setX(2).'<br />';
-//echo $point->setY(20).'<br />';
-
-//$point = new Point(1, 10);
-//$point1 = new Point(2, 30);
-//$point2 = new Point(3, 50);
-//echo Point::getCounter();
-//echo $point->getID1();
-//$point = new Point(1, 15);
-//echo $point . '</br>';
-//$point = new Point(2, 53);
-//echo $point . '</br>';
-//$point = new Point(3, 54);
-//echo $point . '</br>';
-$point = new Point(3, 54);
-echo $point->setZ();
-
-//$r = clone $point;
-//echo $r->x=53;
-
+?>
