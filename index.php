@@ -7,8 +7,12 @@ and open the template in the editor.
      <?php
      require_once 'function.php';
      require_once 'Array_function.php';
+     require_once 'class_Car.php';
+     require_once 'trait_CanMove.php';
+     use avolovodovskii\CanMove;
    define('FONT', '22px');
    const COLOR = 'RED';
+   
         ?>
 <html>
     <head>

@@ -12,9 +12,9 @@ interface СanFly {
 
 class Aercraft implements СanFly, СanMove {
 
-    public function fly() {
-        echo 'Полёт самолёта';        
-    }
+   // public function fly() {
+     //   echo 'Полёт самолёта';        
+   // }
     public function move() {
         echo 'Движение автомобиля';        
     }
