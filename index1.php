@@ -6,8 +6,11 @@
     // use avolovodovskii\HW\СanFly;
 
 
-$car = new Car();
-echo $car->move();
+//$car = new Car();
+//echo $car->move();
 
 //$aer = new Aercraft();
 //echo $aer->fly();
+
+$a;
+@$a = $b;
